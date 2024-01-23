@@ -14,7 +14,7 @@ public class My3DArray {
         // Traversing 
         for (int i = 0; i < my3D.length; i++) {
             for (int j = 0; j < my3D[i].length; j++) {
-                for (int k = 0; k < my3D[j].length; k++) {
+                for (int k = 0; k < my3D[i][j].length; k++) {
                     System.out.println(my3D[i][j][k]);
                 }
             }

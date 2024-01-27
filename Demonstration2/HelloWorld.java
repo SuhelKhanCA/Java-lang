@@ -1,7 +1,7 @@
 package Demonstration2;
 import java.applet.Applet;
 import java.awt.Graphics;
-public class HelloWorld extends Applet {
+public class HelloWorld extends Applet { // Applet with init() and resize() method
     public void init(){
         resize(200, 200);
     }

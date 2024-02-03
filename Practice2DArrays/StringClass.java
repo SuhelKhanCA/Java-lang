@@ -1,4 +1,4 @@
-// package Practice2DArrays;
+package Practice2DArrays;
 import java.util.*;
 class StringClass
 {

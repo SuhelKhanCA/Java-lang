@@ -1,0 +1,205 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| bankdb             |
+| information_schema |
+| insurance_database |
+| insurancedb        |
+| my_db              |
+| mysql              |
+| performance_schema |
+| sys                |
+| test               |
+| unibdb             |
+| univdb2            |
++--------------------+
+11 rows in set (0.00 sec)
+
+mysql> use test;
+Database changed
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> create table JavaCourse(
+    -> Roll integer primary key,
+    -> Name varchar(30),
+    -> Marks integer NOT NULL,
+    -> Grade varchar(2));
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_test |
++----------------+
+| javacourse     |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| javacourse     |
++----------------+
+1 row in set (0.00 sec)
+
+mysql> DESC JAVACOURSE;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| Roll  | int         | NO   | PRI | NULL    |       |
+| Name  | varchar(30) | YES  |     | NULL    |       |
+| Marks | int         | NO   |     | NULL    |       |
+| Grade | varchar(2)  | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(01, 'Debasis', 75, 'A');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(02, 'Nilanjan', 85, 'EX');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(03, 'Tauheed', 65, 'B');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(04, 'Priyabrata', 78, 'A');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from javacourse;
++------+------------+-------+-------+
+| Roll | Name       | Marks | Grade |
++------+------------+-------+-------+
+|    1 | Debasis    |    75 | A     |
+|    2 | Nilanjan   |    85 | EX    |
+|    3 | Tauheed    |    65 | B     |
+|    4 | Priyabrata |    78 | A     |
++------+------------+-------+-------+
+4 rows in set (0.00 sec)
+
+mysql> update javacourse set name ='Debasish' where name = 'Debasis';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update javacourse set marks=85 where name = 'debasish';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from javacourse;
++------+------------+-------+-------+
+| Roll | Name       | Marks | Grade |
++------+------------+-------+-------+
+|    1 | Debasish   |    85 | A     |
+|    2 | Nilanjan   |    85 | EX    |
+|    3 | Tauheed    |    65 | B     |
+|    4 | Priyabrata |    78 | A     |
++------+------------+-------+-------+
+4 rows in set (0.00 sec)
+
+mysql> update javacourse set grade='EX' where name = 'debasish';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from javacourse;
++------+------------+-------+-------+
+| Roll | Name       | Marks | Grade |
++------+------------+-------+-------+
+|    1 | Debasish   |    85 | EX    |
+|    2 | Nilanjan   |    85 | EX    |
+|    3 | Tauheed    |    65 | B     |
+|    4 | Priyabrata |    78 | A     |
++------+------------+-------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select name, roll from javacourse;
++------------+------+
+| name       | roll |
++------------+------+
+| Debasish   |    1 |
+| Nilanjan   |    2 |
+| Tauheed    |    3 |
+| Priyabrata |    4 |
++------------+------+
+4 rows in set (0.00 sec)
+
+mysql> select roll, name from javacourse;
++------+------------+
+| roll | name       |
++------+------------+
+|    1 | Debasish   |
+|    2 | Nilanjan   |
+|    3 | Tauheed    |
+|    4 | Priyabrata |
++------+------------+
+4 rows in set (0.00 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(07, 'Amit', 95, 'A');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO JAVACOURSE VALUES(07, 'Ajay', 55, 'C');
+ERROR 1062 (23000): Duplicate entry '7' for key 'javacourse.PRIMARY'
+mysql> select * from javacourse where marks>80;
++------+----------+-------+-------+
+| Roll | Name     | Marks | Grade |
++------+----------+-------+-------+
+|    1 | Debasish |    85 | EX    |
+|    2 | Nilanjan |    85 | EX    |
+|    7 | Amit     |    95 | A     |
++------+----------+-------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select * from javacourse where name like '%jee%';
+Empty set (0.00 sec)
+
+mysql> select * from javacourse where name like '%sis%';
++------+----------+-------+-------+
+| Roll | Name     | Marks | Grade |
++------+----------+-------+-------+
+|    1 | Debasish |    85 | EX    |
++------+----------+-------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from javacourse order by marks;
++------+------------+-------+-------+
+| Roll | Name       | Marks | Grade |
++------+------------+-------+-------+
+|    3 | Tauheed    |    65 | B     |
+|    4 | Priyabrata |    78 | A     |
+|    1 | Debasish   |    85 | EX    |
+|    2 | Nilanjan   |    85 | EX    |
+|    7 | Amit       |    95 | A     |
++------+------------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from javacourse order by marks desc;
++------+------------+-------+-------+
+| Roll | Name       | Marks | Grade |
++------+------------+-------+-------+
+|    7 | Amit       |    95 | A     |
+|    1 | Debasish   |    85 | EX    |
+|    2 | Nilanjan   |    85 | EX    |
+|    4 | Priyabrata |    78 | A     |
+|    3 | Tauheed    |    65 | B     |
++------+------------+-------+-------+
+5 rows in set (0.00 sec)
+
+mysql> delete from javacourse where marks<66;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> delete from javacourse where marks<66;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delete from javacourse;
+Query OK, 4 rows affected (0.00 sec)
+
+mysql> select * from javacourse;
+Empty set (0.00 sec)
+
+mysql> drop table javacourse;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> select * from javacourse;
+ERROR 1146 (42S02): Table 'test.javacourse' doesn't exist
+mysql> show tables;
+Empty set (0.00 sec)

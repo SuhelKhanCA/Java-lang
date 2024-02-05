@@ -1,7 +1,7 @@
 // Create JDBC connection to MySQL Database server
 import java.sql.*;
 public class Connect {
-	@SuppressWarnings("deprecation")
+	//@SuppressWarnings("deprecation")
     public static void main (String[] args) {
 		Connection conn = null;
 		try{

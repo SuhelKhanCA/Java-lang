@@ -5,7 +5,7 @@ class Circle2{
     double r;
     // Parametrized
     Circle2(double a, double b, double c){ // constructor to initialize objects of Circle class
-        x = a;
+        x = a; 
         y = b;
         r = c;
     }

@@ -1,4 +1,4 @@
-package Demonstration4;
+package Demonstration5;
 
 public class Demonstration_52 { // printing 10 even numbers using (2n)
     public static void main(String[] args) {

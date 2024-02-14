@@ -1,6 +1,6 @@
 /* use of suspend() and resume() methods */
 package Demonstration11;
-class Thread1 extends Thread{
+class Thread12 extends Thread{
     public void run(){
        try {
         System.out.println("First thread is running");
@@ -12,7 +12,7 @@ class Thread1 extends Thread{
 
     }
 }
-class Thread2 extends Thread{
+class Thread21 extends Thread{
     public void run(){
        try {
         System.out.println("Second thread starts running");
@@ -28,8 +28,8 @@ class Thread2 extends Thread{
 public class Demonstration_116 {
     public static void main(String[] args) {
         try {
-            Thread1 first = new Thread1();
-            Thread2 second  = new Thread2();
+            Thread12 first = new Thread12();
+            Thread21 second  = new Thread21();
 
             first.start();
             second.start();

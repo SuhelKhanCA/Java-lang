@@ -10,26 +10,23 @@ public class CreateTableJavaDatabase{
 			String userName = "root";
 			String password = "root";
 			String url = "jdbc:mysql://localhost:3306/test";
-			// may throw error
-			Class.forName("com.mysql.jdbc.Driver"); // new wayy
+			Class.forName("com.mysql.cj.jdbc.Driver"); // updated driver class
 			conn = DriverManager.getConnection(url, userName, password);
 			
 			stmt = conn.createStatement();
-			stmt.execute("SHOW TABLES");
-			rs = stmt.getResultSet();
+			rs = stmt.executeQuery("SHOW TABLES"); // changed from execute to executeQuery
 			System.out.println("Result before creating table");
 			
 			while(rs.next()){
-				TableName = rs.getString("JavaCourse"); // to create a table named javacourse
+				TableName = rs.getString(1); // changed from "JavaCourse" to 1
 				System.out.println("Table Name:  " + TableName + "\n");
 			}
-			stmt.execute("CREATE TABLE JAVACOURSE(Roll INTEGER PRIMARY KEY, Name VARCHAR(30), Marks INTEGER NOT NULL, Grade VARCHAR(2))");
-			stmt.execute("SHOW TABLES");
-			rs = stmt.getResultSet();
+			stmt.execute("CREATE TABLE IF NOT EXISTS JAVACOURSE(Roll INTEGER PRIMARY KEY, Name VARCHAR(30), Marks INTEGER NOT NULL, Grade VARCHAR(2))"); // added IF NOT EXISTS to avoid error if table already exists
+			rs = stmt.executeQuery("SHOW TABLES"); // changed from execute to executeQuery
 			System.out.println("Result after creating table \n");
 			
 			while(rs.next()){
-				TableName = rs.getString("MyTables");
+				TableName = rs.getString(1); // changed from "MyTables" to 1
 				System.out.println("Table Name:  " + TableName + "\n");
 			}
 		} catch(SQLException e){
@@ -56,5 +53,4 @@ public class CreateTableJavaDatabase{
 			}
 		}
 	}
-
 }

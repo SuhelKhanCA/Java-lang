@@ -13,16 +13,15 @@ public class Insertion2 {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         String Name, Grade, NameString, RollString, MarksString, GradeString;
-        int Roll, Makrs;
+        int Roll, Marks; // corrected typo here
         try {
             String userName = "root";
             String password = "root";
             String url = "jdbc:mysql://localhost:3306/test";
-            Class.forName("com.mysql.cj.jdbc.Driver"); // updated driver class
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, userName, password);
             stmt = conn.createStatement();
-            stmt.executeQuery("Select * from javacourse");
-            rs = stmt.getResultSet();
+            rs = stmt.executeQuery("Select * from javacourse");
             System.out.println("\n\n-------------Result before insert--------------\n");
             while (rs.next()) {
                 NameString = rs.getString("Name");
@@ -41,18 +40,17 @@ public class Insertion2 {
             System.out.print("Enter roll:");
             Roll = in.nextInt();
             System.out.print("Enter marks: ");
-            Makrs = in.nextInt();
+            Marks = in.nextInt(); // corrected typo here
 
             String qryString = "INSERT INTO javacourse (Roll, Name, Marks, Grade) VALUES(?, ?, ?, ?)";
             pstmt = conn.prepareStatement(qryString);
             pstmt.setInt(1, Roll);
             pstmt.setString(2, Name);
-            pstmt.setInt(3, Makrs);
+            pstmt.setInt(3, Marks); // corrected typo here
             pstmt.setString(4, Grade);
             pstmt.executeUpdate();
             System.out.println("\n\n-------------Result after insert--------");
-            stmt.execute("Select * from javacourse");
-            rs = stmt.getResultSet();
+            rs = stmt.executeQuery("Select * from javacourse");
             while (rs.next()) {
                 NameString = rs.getString("Name");
                 RollString = rs.getString("Roll");
@@ -68,12 +66,33 @@ public class Insertion2 {
         } catch (Exception e) {
             System.err.println("Can't connect to database");
         } finally {
-            if (rs == null) {
+            if (rs != null) {
                 try {
                     rs.close();
                 } catch (SQLException sqlEx) {
                     // TODO: handle exception
                     rs = null;
+                }
+            }
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException sqlEx) {
+                    stmt = null;
+                }
+            }
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException sqlEx) {
+                    pstmt = null;
+                }
+            }
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    conn = null;
                 }
             }
         }

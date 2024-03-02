@@ -1,5 +1,6 @@
 package Demonstration6b;
 abstract class Base{ // abtract class without any abstract method
+    
     void fun(){
         System.out.println("Base class fun() is called...!");
     }

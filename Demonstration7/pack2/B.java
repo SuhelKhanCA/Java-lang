@@ -6,3 +6,7 @@ public class B {
         // obj.msg(); 
     }
 }
+/*
+ * Sollution is:
+ *          import pack1;
+ */

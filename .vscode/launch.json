@@ -1,0 +1,762 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Connect",
+            "request": "launch",
+            "mainClass": "Connect",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "CreateTable",
+            "request": "launch",
+            "mainClass": "CreateTable",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "CreateTableJavaDatabase",
+            "request": "launch",
+            "mainClass": "CreateTableJavaDatabase",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "DeleteRecord",
+            "request": "launch",
+            "mainClass": "DeleteRecord",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "DeleteRecordLastEx",
+            "request": "launch",
+            "mainClass": "DeleteRecordLastEx",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "ArrayAverage",
+            "request": "launch",
+            "mainClass": "Demonstration1.ArrayAverage",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "FirstJavaProgram",
+            "request": "launch",
+            "mainClass": "Demonstration1.FirstJavaProgram",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorldApp",
+            "request": "launch",
+            "mainClass": "Demonstration1.HelloWorldApp",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "My3DArray",
+            "request": "launch",
+            "mainClass": "Demonstration1.My3DArray",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "BankDemo",
+            "request": "launch",
+            "mainClass": "Demonstration10.BankDemo",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_1010",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_1010",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_1011a",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_1011a",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_102",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_102",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_104",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_104",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_105",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_105",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_107",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_107",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_108",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_108",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_109",
+            "request": "launch",
+            "mainClass": "Demonstration10.Demonstration_109",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "MaximumOfTwoNumber",
+            "request": "launch",
+            "mainClass": "Demonstration10.MaximumOfTwoNumber",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SimpleArrayList",
+            "request": "launch",
+            "mainClass": "Demonstration10.SimpleArrayList",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "TestMyException",
+            "request": "launch",
+            "mainClass": "Demonstration10.TestMyException",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_113",
+            "request": "launch",
+            "mainClass": "Demonstration11.Demonstration_113",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_114",
+            "request": "launch",
+            "mainClass": "Demonstration11.Demonstration_114",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_115",
+            "request": "launch",
+            "mainClass": "Demonstration11.Demonstration_115",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_116",
+            "request": "launch",
+            "mainClass": "Demonstration11.Demonstration_116",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "DataRace",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread.DataRace",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "JoinTest1",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread.JoinTest1",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "ThreadExample",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread.ThreadExample",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "MultiThreadClass1",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread1.MultiThreadClass1",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "MultiThreadRunnable1",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread2.MultiThreadRunnable1",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "ThreadPriority",
+            "request": "launch",
+            "mainClass": "Demonstration11.Thread3.ThreadPriority",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_119",
+            "request": "launch",
+            "mainClass": "Demonstration11.ThreadBank.Demonstration_119",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Transaction",
+            "request": "launch",
+            "mainClass": "Demonstration11.ThreadBank.Transaction",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_31",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_31",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_310",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_310",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_312",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_312",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_313",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_313",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_33",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_33",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_34",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_34",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_39",
+            "request": "launch",
+            "mainClass": "Demonstration3.Demonstration_39",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_41",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_41",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_42",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_42",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_42a",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_42a",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_43",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_43",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_44",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_44",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_45",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_45",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_46",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_46",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_47",
+            "request": "launch",
+            "mainClass": "Demonstration4.Demonstration_47",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "Demonstration4.Example",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Example2",
+            "request": "launch",
+            "mainClass": "Demonstration4.Example2",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SimpleArrayLsit",
+            "request": "launch",
+            "mainClass": "Demonstration4.SimpleArrayLsit",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "UserArgument",
+            "request": "launch",
+            "mainClass": "Demonstration4.UserArgument",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Circle2",
+            "request": "launch",
+            "mainClass": "Demonstration5.Circle2",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Circle3",
+            "request": "launch",
+            "mainClass": "Demonstration5.Circle3",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_51",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_51",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_510",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_510",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_511",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_511",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_517",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_517",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_518",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_518",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_52",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_52",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_53",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_53",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_54",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_54",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_55",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_55",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_56",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_56",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_58",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_58",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_59",
+            "request": "launch",
+            "mainClass": "Demonstration5.Demonstration_59",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "GCD",
+            "request": "launch",
+            "mainClass": "Demonstration5.GCD",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "GeoClass",
+            "request": "launch",
+            "mainClass": "Demonstration5.GeoClass",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "RecursionExample",
+            "request": "launch",
+            "mainClass": "Demonstration5.RecursionExample",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "RecursiveFactorial",
+            "request": "launch",
+            "mainClass": "Demonstration5.RecursiveFactorial",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "RecursiveFibonacci",
+            "request": "launch",
+            "mainClass": "Demonstration5.RecursiveFibonacci",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SimpleFactorial",
+            "request": "launch",
+            "mainClass": "Demonstration5.SimpleFactorial",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SimpleFibbonacci",
+            "request": "launch",
+            "mainClass": "Demonstration5.SimpleFibbonacci",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SimpleSingleInheritance",
+            "request": "launch",
+            "mainClass": "Demonstration5.SimpleSingleInheritance",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "InheritanceDemo1",
+            "request": "launch",
+            "mainClass": "Demonstration6.InheritanceDemo1",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Splendor",
+            "request": "launch",
+            "mainClass": "Demonstration6.Splendor",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "TestSuper1",
+            "request": "launch",
+            "mainClass": "Demonstration6.TestSuper1",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "TestSuper4",
+            "request": "launch",
+            "mainClass": "Demonstration6.TestSuper4",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Who",
+            "request": "launch",
+            "mainClass": "Demonstration6.Who",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_61",
+            "request": "launch",
+            "mainClass": "Demonstration6a.Demonstration_61",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_62a",
+            "request": "launch",
+            "mainClass": "Demonstration6a.Demonstration_62a",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_66",
+            "request": "launch",
+            "mainClass": "Demonstration6a.Demonstration_66",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonatration_68",
+            "request": "launch",
+            "mainClass": "Demonstration6b.Demonatration_68",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Demonstration_611",
+            "request": "launch",
+            "mainClass": "Demonstration6b.Demonstration_611",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "B",
+            "request": "launch",
+            "mainClass": "Demonstration7.B",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "PrivateA",
+            "request": "launch",
+            "mainClass": "Demonstration7.PrivateA",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Simple",
+            "request": "launch",
+            "mainClass": "Demonstration7.Simple",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "B(1)",
+            "request": "launch",
+            "mainClass": "Demonstration7.pack2.B",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "B(2)",
+            "request": "launch",
+            "mainClass": "Demonstration7.tempo.B",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "DropTable",
+            "request": "launch",
+            "mainClass": "DropTable",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "FileHandlingExample",
+            "request": "launch",
+            "mainClass": "FileHandlingExample",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "InsertJavaDatabase",
+            "request": "launch",
+            "mainClass": "InsertJavaDatabase",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "InsertRecord",
+            "request": "launch",
+            "mainClass": "InsertRecord",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Insertion2",
+            "request": "launch",
+            "mainClass": "Insertion2",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "BinaryAddition",
+            "request": "launch",
+            "mainClass": "Practice2DArrays.BinaryAddition",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "CommandLineInp",
+            "request": "launch",
+            "mainClass": "Practice2DArrays.CommandLineInp",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "StringClass",
+            "request": "launch",
+            "mainClass": "Practice2DArrays.StringClass",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "ZaggedArray",
+            "request": "launch",
+            "mainClass": "Practice2DArrays.ZaggedArray",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "ProcessingDatabase",
+            "request": "launch",
+            "mainClass": "ProcessingDatabase",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "SelectRecord",
+            "request": "launch",
+            "mainClass": "SelectRecord",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "UpdateRecord",
+            "request": "launch",
+            "mainClass": "UpdateRecord",
+            "projectName": "Java-lang_e71b26f7"
+        },
+        {
+            "type": "java",
+            "name": "UpdateRecord2",
+            "request": "launch",
+            "mainClass": "UpdateRecord2",
+            "projectName": "Java-lang_e71b26f7"
+        }
+    ]
+}
